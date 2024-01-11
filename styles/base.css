@@ -10,11 +10,14 @@ main{
     display: grid;
     text-align: center;
 }
+header img{
+    width: 100px;
+    padding-right: 25px;
+}
 header{
     display:flex;
     text-align: center;
     align-items: center;
-    flex-direction: column;
     justify-content: center;
     background-color: rgb(186, 186, 219);
 }
