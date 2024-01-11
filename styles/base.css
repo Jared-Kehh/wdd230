@@ -1,0 +1,55 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    height: 100vh;
+    display: grid;
+    margin: 0;
+}
+main{
+    display: grid;
+    text-align: center;
+}
+header{
+    display:flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(186, 186, 219);
+}
+nav a{
+    display: grid;
+    text-align: center;
+    text-decoration: none;
+    background-color: black;
+    padding: 1rem;
+    color:white;
+}
+main h2{
+    border-bottom: 1px solid black;
+}
+h3{
+    background-color: rgb(186, 186, 219);
+    margin-top: 0;
+    padding: 5px;
+}
+.card{
+    border: 1px solid;
+    border-radius: 20px;
+    margin: 10px;
+    overflow: hidden;
+}
+.card ul li{
+    list-style-type: none;
+}
+footer img{
+    width: 75px;
+}
+footer{
+    background-color: rgb(186, 186, 219);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
