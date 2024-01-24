@@ -63,19 +63,17 @@ footer{
     flex-direction: column;
 }
 
-@media screen and (min-width: 500px)
+@media screen and (max-width: 500px)
 {
     header img
     {
         margin-right: 1rem;
         margin-left: 1rem;
     }
-    nav a{
-        display: grid;
-        text-align: center;
-        text-decoration: none;
-        background-color: black;
-        padding: 1rem;
-        color:white;
+    nav{
+        display:grid;
+    }
+    nav ul li{
+        flex: 1 1 100%;
     }
 }
