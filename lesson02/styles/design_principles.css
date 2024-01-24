@@ -1,0 +1,29 @@
+body {
+	font-family: 'Assistant', sans-serif;
+}
+
+header,
+main,
+footer {
+	max-width: 760px;
+	margin: 0 auto;
+    display: grid;
+}
+h1,h3 {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+img{
+	width: 200px;
+    border-radius: 10%;
+}
+
+.left{
+    text-align: left;
+}
+.center{
+    text-align: center;
+}
+.right{
+    text-align: right;
+}
