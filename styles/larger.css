@@ -1,11 +1,11 @@
-@media screen and (min-width: 500px)
+@media screen and (max-width: 500px)
 {
     header img
     {
         margin-right: 1rem;
         margin-left: 1rem;
     }
-    nav ul{
+    nav{
         display:grid;
     }
     nav ul li{

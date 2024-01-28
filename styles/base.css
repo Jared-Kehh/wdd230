@@ -51,6 +51,15 @@ h3{
 .card ul li{
     list-style-type: none;
 }
+.frameMap
+{
+    margin: auto;
+    border: 0;
+    max-width: 3000px;
+    width: 95%;
+    height: 450px;
+    margin-bottom: 1rem;
+}
 footer img{
     width: 75px;
 }
@@ -77,3 +86,4 @@ footer{
         flex: 1 1 100%;
     }
 }
+
