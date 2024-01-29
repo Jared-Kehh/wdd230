@@ -7,8 +7,8 @@
   --accent1-color: #51dd5d;
   --accent2-color: white;
 
-  --heading-font: "Oswald", sans-serif, "Playfair Display";
-  --paragraph-font: Quicksand, Barlow, sans-serif;
+  --heading-font: 'Merriweather', serif, 'Nunito', sans-serif;
+  --paragraph-font: 'Nunito', sans-serif;
 
   --headline-color-on-white: #396E94;
   --headline-color-on-color: white;
@@ -121,7 +121,7 @@ nav a:hover {
   grid-template-areas: ". . home home . ."
     ". . . top . ."
     ". left left right right ."
-    "page2 page2 . . page3 page3";
+    "page2 page2 . page3 . page4";
 }
 .sitemap > div {
   text-align: center;
@@ -141,12 +141,22 @@ nav a:hover {
   background-color: #ccc;
   line-height: 3em;
 }
+.sm-page4{
+  grid-area: page4;
+  background-color: #ccc;
+  line-height: 3em;
+}
 .top {
   grid-area: top;
   border-left: 1px solid;
 }
 .left {
   grid-area: left;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+.middle {
+  grid-area: right;
   border-top: 1px solid;
   border-left: 1px solid;
 }
