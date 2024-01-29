@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 :root {
-  --primary-color: #396E94   ;
-  --secondary-color: #E7C24F ;
+  --primary-color: #396E94;
+  --secondary-color: #E7C24F;
   --accent1-color: #51dd5d;
   --accent2-color: white;
 
@@ -14,7 +14,7 @@
   --headline-color-on-color: white;
   --paragraph-color-on-white: #396E94;
   --paragraph-color-on-color: white;
-  --paragraph-background-color: #396E94  ;
+  --paragraph-background-color: #396E94;
   --nav-link-color: #396E94;
   --nav-background-color: #0a0a0a;
   --nav-hover-link-color: white;
