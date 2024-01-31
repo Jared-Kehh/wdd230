@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="WDD 230 - Web Frontend Development Jared Keh course assignment portal">
@@ -19,30 +19,34 @@
     <header>
         <img src="images/unnamed(3).jpeg" alt="profilepicture">
         <h1>Jared Keh</h1>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
     </header>
     <nav>
-        <a href="#">Home</a>
-        <a href="lesson03/chamber-site-plan.html">Site Plan</a>
-        <a href="chamber/">Chamber</a>
-        <a href="https://www.byui.edu/">BYU-Idaho</a>
-        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/hel/5?lang=eng&id=9#p9">Scripture</a>
+        <ul class="navigationmenu">
+            <a href="#">Home</a>
+            <a href="lesson03/chamber-site-plan.html">Site Plan</a>
+            <a href="chamber/">Chamber</a>
+            <a href="https://www.byui.edu/">BYU-Idaho</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/hel/5?lang=eng&id=9#p9">Scripture</a>
+        </ul>
     </nav>
     <main>
         <h2>WDD 230:Web Frontend Development</h2>
-        <section class="card">
-            <h3>Learning Activities</h3>
-            <ul>
-                <li>
-                    <a href="images/Screenshot2024-01-22130010.png">CSS Combinators</a>
-                    <a></a>
-                </li>
-            </ul>
-        </section>
-        <section class="card">
-            <h3>Information</h3>
-            <p>Temperature Information</p>
-            <!-- placeholder for the number of visits on the page -->
-        </section>
+        <div class="information">
+            <section class="card">
+                <h3>Learning Activities</h3>
+                <ul>
+                    <li>
+                        <a></a>
+                    </li>
+                </ul>
+            </section>
+            <section class="card">
+                <h3>Information</h3>
+                <p>Temperature Information</p>
+                <!-- placeholder for the number of visits on the page -->
+            </section>
+        </div>
         <iframe class="frameMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52922.909299340805!2d-117.85666506304887!3d34.0007052905581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c32c8e42f729a9%3A0xea88c028d17dd7a9!2sDiamond%20Bar%2C%20CA!5e0!3m2!1sen!2sus!4v1706410499618!5m2!1sen!2sus" title="Diamond Bar, C"></iframe>
     </main>
     <footer>
