@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/chamber-site.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Nunito&display=swap" rel="stylesheet">
     <title>Diamond Bar Chamber of Commerce</title>
 </head>
 <body>
@@ -19,25 +25,31 @@
         </ul>
     </nav> -->
     <section id="hero">
-        <div class="info">
-            <h1>Diamond Bar Chamber of Commerce</h1>
-    <nav>
-        <ul>
-            <li>
-                <a href="#">Home</a>
-                <a href="#">Discover</a>
-                <a href="#">Directory</a>
-                <a href="#">Join</a>
-            </li>
-        </ul>
-    </nav>
+        <div class="container">
+            <div class="info">
+                <h1>Diamond Bar <br>Chamber of Commerce</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                    <a href="#">Discover</a>
+                    <a href="#">Directory</a>
+                    <a href="#">Join</a>
+                </li>
+            </ul>
+        </nav>
+            </div>
         </div>
     </section>
     <section class="weathercard">
-        Weather
+        <h1>Weather</h1>
     </section>
     <section class="eventscard">
-        Events
+        <h1>Events</h1>
     </section>
+    <footer>
+        <p>&copy;<span id="copyrightYear"></span> <br>Jared Keh<br>United States</p>
+    </footer>
+    <script src="scripts/chambergetdate.js"></script>
 </body>
 </html>
