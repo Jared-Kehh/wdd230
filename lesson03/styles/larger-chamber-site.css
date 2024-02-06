@@ -1,0 +1,66 @@
+@media screen and (max-width: 518px) {
+    #hero{
+        width: 100%;
+        height: 100vh;
+        background: url(/images/Diamond_Bar_City_Hills.jpg) no-repeat center / cover;
+        background-attachment: fixed;
+        color: white;
+    }
+    #hero button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 10px 25px;
+        color: white;
+        background-color: #396E94;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 10%;
+    }
+    button{
+        position: absolute;
+        top: 450px;
+        left: 100px;
+    }
+    .info h1{
+        position: absolute;
+        top: 300px;
+        left: 100px;
+        justify-content: center;
+    }
+    h1{
+        font-size: 40px;
+        font-family: var(--heading-font);
+    }
+    nav a {
+        padding:20px
+    }
+    .navigation {
+        display: none; /* Hide the navigation links in mobile view */
+        flex-direction: column;
+        text-align: center;
+        position: absolute;
+        top: 100%; /* Change top to 100% to position the menu below the header */
+        left: 0;
+        z-index: 1; /* Add this line to ensure the menu is above other content */
+        padding: 1rem;
+        box-sizing: border-box;
+        margin: 0;
+    }
+    .menu-toggle {
+        display: block; /* Display the hamburger menu in mobile view */
+        cursor: pointer;
+    }
+    .navigation
+    {
+        padding: 0;
+    }
+    .navigation a {
+        display: block;
+    }
+
+}
+
+@media  screen and (max-width: 700px) {
+    
+}
