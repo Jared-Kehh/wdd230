@@ -1,6 +1,6 @@
 function toggleMenu() {
     var menuToggle = document.querySelector('.menu-toggle');
-    var navigation = document.querySelector('.navigation');
+    var navigation = document.querySelector('.navigationmenu');
 
     if (navigation.style.display === 'none' || navigation.style.display === '') {
         navigation.style.display = 'block';
@@ -9,6 +9,21 @@ function toggleMenu() {
     } else {
         navigation.style.display = 'none';
         menuToggle.innerHTML = '☰'; // Change the content back to the hamburger icon
-        menuToggle.style.color = 'black';
+        menuToggle.style.color = 'white';
     }
 }
+
+window.addEventListener('resize', function () {
+    var navigation = document.querySelector('.navigationmenu');
+    var menuToggle = document.querySelector('.menu-toggle');
+
+    if (window.innerWidth > 518) {
+        navigation.style.display = 'block';
+        menuToggle.innerHTML = '☰';
+        menuToggle.style.color = 'white';
+    } else {
+        navigation.style.display = 'none';
+        menuToggle.innerHTML = '☰';
+        menuToggle.style.color = 'white';
+    }
+});

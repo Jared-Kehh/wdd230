@@ -35,7 +35,7 @@
     nav a {
         padding:20px
     }
-    .navigation {
+    .navigationmenu {
         display: none; /* Hide the navigation links in mobile view */
         flex-direction: column;
         text-align: center;
@@ -51,11 +51,11 @@
         display: block; /* Display the hamburger menu in mobile view */
         cursor: pointer;
     }
-    .navigation
+    .navigationmenu
     {
         padding: 0;
     }
-    .navigation a {
+    .navigationmenu a {
         display: block;
     }
 
