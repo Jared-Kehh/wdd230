@@ -7,8 +7,8 @@
     <meta name="author" content="Jared Keh">
     <meta property="og:title" content="Diamond Bar Chamber of Commerce Home Page">
     <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/0/0c/GoldenGateBridge-001.jpg">
-    <meta property="og:url" content="">
-    <meta property="og:type" content="Diamond Bar Chamber">
+    <meta property="og:url" content="https://jared-kehh.github.io/wdd230/chamber/">
+    <meta property="og:type" content="Diamond Bar Chamber of Commerce">
     <link rel="stylesheet" href="styles/chamber-site.css">
     <link rel="stylesheet" href="styles/larger-chamber-site.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,44 +20,46 @@
     <title>Diamond Bar Chamber of Commerce</title>
 </head>
 <body>
-    <section id="hero">
-        <div class="container">
-            <div class="info">
-                <h1>Diamond Bar <br>Chamber of Commerce</h1>
-                <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-        <nav>
-            <ul class="navigationmenu">
-                <li>
-                    <a href="#">Home</a>
-                    <a href="#">Discover</a>
-                    <a href="#">Directory</a>
-                    <a href="#">Join</a>
-                </li>
-            </ul>
-        </nav>
-        <button>Join Now</button>
+    <header>
+        <section id="hero">
+            <div class="container">
+                <div class="info">
+                    <h1>Diamond Bar <br>Chamber of Commerce</h1>
+                    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <nav>
+                <ul class="navigationmenu">
+                    <li>
+                        <a href="#">Home</a>
+                        <a href="#">Discover</a>
+                        <a href="#">Directory</a>
+                        <a href="#">Join</a>
+                    </li>
+                </ul>
+            </nav>
+            <button>Join Now</button>
+                </div>
             </div>
-        </div>
-        <main>
-            <div>
-                <section id="infocards">
-                    <section id="weathercard">
-                        <h2>Weather</h2>
-                        <p>Hello World</p>
-                    </section>
-                    <section id="eventscard">
-                        <h2>Events</h2>
-                        <p>Hello World</p>
-                    </section>
+        </section>
+    </header>
+    <main>
+        <div>
+            <section id="infocards">
+                <section id="weathercard">
+                    <h2>Weather</h2>
+                    <p>Hello World</p>
                 </section>
-            </div>
-            </main>
-            <footer>
-                <p>&copy;<span id="copyrightYear"></span> <br>Jared Keh<br>Diamond Bar Chamber of Commerce</p>
-                <p id="lastModified"></p>
-            </footer>
-            <script src="scripts/chambergetdate.js"></script>
-            <script src="scripts/chambergetmenu.js"></script>
-    </section>
+                <section id="eventscard">
+                    <h2>Events</h2>
+                    <p>Hello World</p>
+                </section>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="copyrightYear"></span> <br>Jared Keh<br>Diamond Bar Chamber of Commerce</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/chambergetdate.js"></script>
+    <script src="scripts/chambergetmenu.js"></script>
 </body>
 </html>
