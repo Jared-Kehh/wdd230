@@ -6,10 +6,8 @@ function toggleDarkMode() {
     var action = document.querySelector('#weathercard h2');
 	var action2 = document.querySelectorAll('#eventscard h2');
     var colorback = document.querySelector('body');
-
     // Toggle dark mode class on the main element
     mainElement.classList.toggle('dark-mode');
-
     // Check if dark mode is active
     if (darkModeToggle.checked) {
         // Dark mode is active, update styles
@@ -39,6 +37,5 @@ function toggleDarkMode() {
         weather.style.backgroundColor = '#424242';
         weather.style.color = 'white';
         action.style.color = 'white';
-
     }
 }
