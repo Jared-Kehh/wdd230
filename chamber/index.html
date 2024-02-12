@@ -23,6 +23,12 @@
 <body>
     <header>
         <section id="hero">
+            <div id="mode">
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round" onclick="toggleDarkMode()"></span>
+                </label>
+            </div>
             <div class="container">
                 <div class="info">
                     <h1>Diamond Bar <br>Chamber of Commerce</h1>
@@ -47,11 +53,17 @@
             <section id="infocards">
                 <section id="weathercard">
                     <h2>Weather</h2>
-                    <p>Hello World</p>
+                    <p>Weather in Diamond Bar, California: <br> 67°F</p>
                 </section>
                 <section id="eventscard">
                     <h2>Events</h2>
-                    <p>Hello World</p>
+                    <p>Breakfast with the Bunny - March 30 <br> City 35th Birthday Celebration - April 6 <br> Earth Day Celebration - April 20</p>
+                </section>
+                <section id="eventscard">
+                    <h2>Highlights</h2>
+                    <p>SR 57/60 Interchange Improvement Project Update <br> Registration Now Open for Youth Indoor Soccer <br> Children’s Dance Classes
+                    <br> Children’s Musical Theater <br> New Businesses: January 31-February 6, 2024 <br> February 13, 2024 Planning Commission Meeting
+                <br> January 2024 Code Enforcement Activity <br> January Building Inspection Activity <br> January 2024 Plan Check and Permit Revenues</p>
                 </section>
             </section>
         </div>
@@ -62,5 +74,6 @@
     </footer>
     <script src="scripts/chambergetdate.js"></script>
     <script src="scripts/chambergetmenu.js"></script>
+    <script src="scripts/darkmode.js"></script>
 </body>
 </html>
