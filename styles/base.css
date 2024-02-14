@@ -60,6 +60,26 @@ nav a{
     background-color: #fff;
     margin: 5px 0;
 }
+.herolabel {
+	position: absolute;
+	top: 200px;
+	left: 30px;
+	background: radial-gradient(#fff, #4D5B97);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 1.5rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+}
+
+.herolabel p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 1.5rem;
+	font-family:'Montserrat', sans-serif;
+}
+
+
 main h2{
     border-bottom: 1px solid black;
     text-align: center;
@@ -106,12 +126,30 @@ footer{
     flex-direction: column;
 }
 
-@media screen and (max-width: 500px)
+@media screen and (max-width: 518px)
 {
     header img
     {
         margin-right: 1rem;
         margin-left: 1rem;
+    }
+    .herolabel {
+        position: absolute;
+        top: 200px;
+        left: 30px;
+        background: radial-gradient(#fff, #6a7dcf);
+        border: 1px solid rgba(0,0,0,.75);
+        padding: .5rem;
+        box-shadow: 0 0 3rem #fff;
+        opacity: 1;
+    }
+    
+    .herolabel p {
+        margin: 0;
+        padding: .25rem;
+        font-weight: 300;
+        font-size: 1.5rem;
+        font-family:'Montserrat', sans-serif;
     }
 }
 
@@ -122,9 +160,26 @@ footer{
         flex-direction: column;
         align-items: center;
     }
+    .herolabel {
+        position: absolute;
+        top: 200px;
+        left: 30px;
+        background: radial-gradient(#fff, #4D5B97);
+        border: 1px solid rgba(0,0,0,.75);
+        padding: 1rem;
+        box-shadow: 0 0 3rem #fff;
+        opacity: 1.5;
+    }
+    .herolabel p {
+        margin: 0;
+        padding: .25rem;
+        font-weight: 500;
+        font-size: 1.5rem;
+        font-family:'Montserrat', sans-serif;
+    }
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 518px){
     nav {
         position: relative; /* Add this line to make the parent container relative */
         margin: 0;
