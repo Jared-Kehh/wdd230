@@ -23,6 +23,11 @@
 <body>
     <header>
         <section id="hero">
+            <picture>
+                <source media="(min-width: 960px)" srcset="images/wdd230-org.webp" >
+                <source media="(min-width: 480px)" srcset="images/wdd230-org1.webp">
+                <img src="images/wdd230-org2.webp">
+            </picture>
             <div id="mode">
                 <label class="switch">
                     <input type="checkbox">
@@ -31,7 +36,7 @@
             </div>
             <div class="container">
                 <div class="info">
-                    <h1>Diamond Bar <br>Chamber of Commerce</h1>
+                    <h1 id="heading">Diamond Bar <br>Chamber of Commerce</h1>
                     <div class="menu-toggle" onclick="toggleMenu()">☰</div>
             <nav>
                 <ul class="navigationmenu">
@@ -53,7 +58,8 @@
             <section id="infocards">
                 <section id="weathercard">
                     <h2>Weather</h2>
-                    <p>Weather in Diamond Bar, California: <br> 67°F</p>
+                    <p id="temperature">Temperature: <span id="tempValue">...</span>°F <br> Wind Speed: <span id="windValue">...</span> mph <br> 
+                        Wind Chill: <span id="windchillValue">...</span>°F</p>
                 </section>
                 <section id="eventscard">
                     <h2>Events</h2>
@@ -74,6 +80,22 @@
     </footer>
     <script src="scripts/chambergetdate.js"></script>
     <script src="scripts/chambergetmenu.js"></script>
+    <script src="scripts/size.js"></script>
     <script src="scripts/darkmode.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script>
+        // Assuming you have JavaScript code to fetch and update temperature and wind speed values
+        // For demonstration purposes, let's assume temperature and wind speed are fetched and updated elsewhere in your code
+        var currentTemperature = 45; // Example temperature value in Fahrenheit
+        var currentWindSpeed = 10; // Example wind speed value in mph
+
+        // Update temperature and wind speed elements on the page
+        document.getElementById("tempValue").textContent = currentTemperature;
+        document.getElementById("windValue").textContent = currentWindSpeed;
+
+        // Calculate wind chill and update the element on the page
+        var windChill = calculateWindChill(currentTemperature, currentWindSpeed);
+        document.getElementById("windchillValue").textContent = windChill;
+    </script>
 </body>
 </html>
