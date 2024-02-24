@@ -209,8 +209,8 @@ footer{
         display: block; /* Display the hamburger menu in mobile view */
         cursor: pointer;
     }
-    .frameMap
+    /* .frameMap
     {
         display: none;
-    }
+    } */
 }
