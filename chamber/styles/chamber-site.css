@@ -258,6 +258,7 @@ footer{
     --paragraph-font: 'Nunito', sans-serif;
 }
 
+
 *{
     padding:0;
     margin: 0;
@@ -508,4 +509,32 @@ footer{
     height: 100%;
     height: auto;
     position: relative;
+}
+
+main img {
+    width: 100%;
+    height: 75%;
+    padding: 20px;
+}
+.city {
+    grid-column: 2;
+    grid-row: 2;
+}
+.mhpark{
+    grid-column: 2;
+    grid-row: 3;
+}
+.canyon{
+    grid-row: 1;
+    grid-column: 2;
+}
+.dbgolf {
+    grid-column: 2;
+    grid-row: 4
+}
+
+main{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 25% 25% 25%;
 }

@@ -24,9 +24,9 @@
     <header>
         <section id="hero">
             <picture>
-                <source media="(min-width: 960px)" srcset="images/wdd230-org.webp" >
-                <source media="(min-width: 480px)" srcset="images/wdd230-org1.webp">
-                <img src="images/wdd230-org2.webp" alt="picture">
+                <source media="(min-width: 960px)" srcset="images/wdd230-org.webp" loading="lazy">
+                <source media="(min-width: 480px)" srcset="images/wdd230-org1.webp" loading="lazy">
+                <img src="images/wdd230-org2.webp" alt="picture" loading="lazy">
             </picture>
             <div id="mode">
                 <label class="switch">
@@ -42,7 +42,7 @@
                 <ul class="navigationmenu">
                     <li>
                         <a href="#">Home</a>
-                        <a href="discover.html">Discover</a>
+                        <a href="#">Discover</a>
                         <a href="#">Directory</a>
                         <a href="#">Join</a>
                     </li>
@@ -54,25 +54,10 @@
         </section>
     </header>
     <main>
-        <div>
-            <section id="infocards">
-                <section id="weathercard">
-                    <h2>Weather</h2>
-                    <p id="temperature">Temperature: <span id="tempValue">...</span>°F <br> Wind Speed: <span id="windValue">...</span> mph <br> 
-                        Wind Chill: <span id="windchillValue">...</span>°F</p>
-                </section>
-                <section id="eventscard">
-                    <h2>Events</h2>
-                    <p>Breakfast with the Bunny - March 30 <br> City 35th Birthday Celebration - April 6 <br> Earth Day Celebration - April 20</p>
-                </section>
-                <section id="eventcard">
-                    <h2>Highlights</h2>
-                    <p>SR 57/60 Interchange Improvement Project Update <br> Registration Now Open for Youth Indoor Soccer <br> Children’s Dance Classes
-                    <br> Children’s Musical Theater <br> New Businesses: January 31-February 6, 2024 <br> February 13, 2024 Planning Commission Meeting
-                <br> January 2024 Code Enforcement Activity <br> January Building Inspection Activity <br> January 2024 Plan Check and Permit Revenues</p>
-                </section>
-            </section>
-        </div>
+        <img class="canyon" src="images/steep-canyon-trail-11.webp" alt="steep canyon trial" loading="lazy">
+        <img class="city" src="images/Document.jpg" alt="city center" loading="lazy">
+        <img class="mhpark" src="images/348s.jpg" alt="maple hill park" loading="lazy">
+        <img class="dbgolf" src="images/1_Diamond-Bar-Golf-Course-4-of-20-1920x1280.jpg" alt="diamond bar golf" loading="lazy">
     </main>
     <footer>
         <p>&copy;<span id="copyrightYear"></span> <br>Jared Keh<br>Diamond Bar Chamber of Commerce</p>
