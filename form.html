@@ -1,57 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/form.css">
-    <title>Forms</title>
-</head>
-<body>
-    <div class="container">
-        <form class="form" id="login">
-            <h1 class="form__title">Login</h1>
-            <div class="form__message form__message--error"></div>
-            <div class="form__input-group">
-                <input type="text" class="form__input" autofocus placeholder="Username or email">
-                <div class="form__input-error-message"></div>
-            </div>
-            <div class="form__input-group">
-                <input type="password" class="form__input" autofocus placeholder="Password">
-                <div class="form__input-error-message"></div>
-            </div>
-            <button class="form__button" type="submit">Continue</button>
-            <p class="form__text">
-                <a href="#" class="form__link">Forgot your password?</a>
-            </p>
-            <p class="form__text">
-                <a class="form__link" href="./" id="linkCreateAccount">Don't have an account? Create account</a>
-            </p>
-        </form>
-        <form class="form form--hidden" id="createAccount">
-            <h1 class="form__title">Create Account</h1>
-            <div class="form__message form__message--error"></div>
-            <div class="form__input-group">
-                <input type="text" id="signupUsername" class="form__input" autofocus placeholder="Username">
-                <div class="form__input-error-message"></div>
-            </div>
-            <div class="form__input-group">
-                <input type="text" class="form__input" autofocus placeholder="Email Address">
-                <div class="form__input-error-message"></div>
-            </div>
-            <div class="form__input-group">
-                <input type="password" class="form__input" autofocus placeholder="Password">
-                <div class="form__input-error-message"></div>
-            </div>
-            <div class="form__input-group">
-                <input type="password" class="form__input" autofocus placeholder="Confirm password">
-                <div class="form__input-error-message"></div>
-            </div>
-            <button class="form__button" type="submit">Continue</button>
-            <p class="form__text">
-                <a class="form__link" href="./" id="linkLogin">Already have an account? Sign in</a>
-            </p>
-        </form>
-    </div>
-    <script src="scripts/form.js"></script>
-</body>
+<html lang="en-US">
+    <head>
+        <link rel="stylesheet" href="styles/form.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forms</title>
+    </head>
+    <body>
+        <header>
+            <img src="images/unnamed(3).jpeg" alt="profilepicture">
+            <h1>Jared Keh</h1>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        </header>
+        <nav>
+            <ul class="navigationmenu">
+                <li>
+                    <a href="index.html">Home</a>
+                    <a href="lesson03/chamber-site-plan.html">Site Plan</a>
+                    <a href="chamber/">Chamber</a>
+                    <a href="https://www.byui.edu/">BYU-Idaho</a>
+                    <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/hel/5?lang=eng&id=9#p9">Scripture</a>
+                    <a href="#">Forms</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <div id="formmessage"></div>
+            <form action="record.html" method="get">        
+                <label for="user">Username:</label><br>
+                <input type="text" id="user" name="user" required><br>                
+                <label for="keyphrase">Password</label><br>
+                <input type="password" id="keyphrase" name="keyphrase" pattern="^[a-zA-Z0-9].{8,}$" title="8 or more alphanumerical characters"><br>
+                <label for="keyphrase2">Confirm password:</label><br>
+                <input type="password" id="keyphrase2" name="keyphrase2"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9_.\-]+@byui.edu" title="A valid byui.edu email address"><br>
+                <label for="rate">Page rating:</label><br>
+                <input type="range" id="rate" name="rate" min="1" max="10" value="5" step="1" list="rangevalues">
+                <div id="rangevalue">5</div>
+                <datalist id="rangevalues">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist><br>
+                <input type="submit" value="Submit">
+            </form>
+        </main>
+        <footer>
+            <p>&copy;<span id="copyrightYear"></span> <br>Jared Keh<br>United States</p>
+            <p id="lastModified"></p>
+        </footer>
+        <script src="scripts/forms.js"></script>
+        <script src="scripts/rate.js"></script>
+        <script src="scripts/getdates.js"></script>
+        <script src="scripts/menu.js"></script>
+    </body>
 </html>
