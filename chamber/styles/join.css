@@ -11,7 +11,7 @@ form
     background-color: var(--form-background-color);
     font-size: var(--form-font-size);
     width: 50%;
-    align-self: center;
+    align-self: baseline;
 }
 :root
 {
