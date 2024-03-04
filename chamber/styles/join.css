@@ -1,0 +1,33 @@
+*
+{
+    margin: 0;
+}
+form
+{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--form-background-color);
+    font-size: var(--form-font-size);
+    width: 50%;
+    align-self: center;
+}
+:root
+{
+    --form-background-color: #396E94;
+    --form-font-size: 20px;
+}
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="range"] {
+    width: 60%; 
+    max-width: 400px;
+    height: 20px;
+}
+form input[type="submit"] {
+    width: 100px; 
+    height: 30px; 
+    font-size: 18px; 
+}

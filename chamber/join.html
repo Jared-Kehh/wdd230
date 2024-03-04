@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/chamber-site.css">
+    <link rel="stylesheet" href="styles/larger-chamber-site.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <title>Join</title>
+</head>
+<body>
+    <header>
+        <section id="hero">
+            <picture>
+                <source media="(min-width: 960px)" srcset="images/wdd230-org.webp" >
+                <source media="(min-width: 480px)" srcset="images/wdd230-org1.webp">
+                <img src="images/wdd230-org2.webp" alt="picture">
+            </picture>
+            <div id="mode">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round" onclick="toggleDarkMode()"></span>
+                </label>
+            </div>
+            <div class="container">
+                <div class="info">
+                    <h1 id="heading">Diamond Bar <br>Chamber of Commerce</h1>
+                    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <nav>
+                <ul class="navigationmenu">
+                    <li>
+                        <a href="#">Home</a>
+                        <a href="discover.html">Discover</a>
+                        <a href="#">Directory</a>
+                        <a href="#">Join</a>
+                    </li>
+                </ul>
+            </nav>
+            <button>Join Now</button>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <div id="formmessage"></div>
+            <form action="record.html" method="get">        
+                <label for="firstname">First Name</label><br>
+                <input type="text" id="user" name="user" required><br>                
+                <label for="lastname">Last Name</label><br>
+                <input type="text" id="keyphrase" name="keyphrase" required><br>
+                <label for="position">Position:</label><br>
+                <input type="text" id="keyphrase2" name="keyphrase2"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9_.\-]+@byui.edu" title="A valid byui.edu email address"><br>
+                <label for="number">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" required><br>
+                <label for="Membership">Membership Level:</label><br>
+                <select id="membership">
+                    <option value="NP">NP Membership</option>
+                    <option value="Bronze">Bronze Membership</option>
+                    <option value="Silver">Silver Membership</option>
+                    <option value="Gold">Gold Membership</option>
+                </select><br>
+                <p><label for="review">Review:</label></p>
+                <textarea name="review" id="review" cols="30" rows="5"></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="copyrightYear"></span> <br>Jared Keh<br>Diamond Bar Chamber of Commerce</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/chambergetdate.js"></script>
+    <script src="scripts/chambergetmenu.js"></script>
+    <script src="scripts/size.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/rating.js"></script>
+</body>
+</html>
