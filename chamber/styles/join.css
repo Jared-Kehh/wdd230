@@ -11,7 +11,8 @@ form
     background-color: var(--form-background-color);
     font-size: var(--form-font-size);
     width: 50%;
-    align-self: baseline;
+    align-self: center;
+    justify-content: center;
 }
 :root
 {
@@ -22,7 +23,7 @@ form input[type="text"],
 form input[type="password"],
 form input[type="email"],
 form input[type="range"] {
-    width: 60%; 
+    width: 80%; 
     max-width: 400px;
     height: 20px;
 }

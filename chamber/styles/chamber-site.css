@@ -534,7 +534,7 @@ main img {
     grid-row: 4
 }
 
-main{
+.discover{
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 25% 25% 25% 25%;
