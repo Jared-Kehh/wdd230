@@ -1,0 +1,64 @@
+{
+  "companies": [
+    {
+      "name": "Apple Inc.",
+      "founded": 1976,
+      "hq_location": "Cupertino, California, USA",
+      "industry": "Technology",
+      "ceo": "Tim Cook",
+      "revenue": "$274.52 billion (2020)",
+      "website": "https://www.apple.com/",
+      "logo": "https://pngfre.com/wp-content/uploads/apple-logo-6.png",
+      "phone_number": "+1-800-692-7753",
+      "address": "1 Apple Park Way, Cupertino, CA 95014, USA"
+    },
+    {
+      "name": "Google LLC",
+      "founded": 1998,
+      "hq_location": "Mountain View, California, USA",
+      "industry": "Technology",
+      "ceo": "Sundar Pichai",
+      "revenue": "$181.69 billion (2020)",
+      "website": "https://www.google.com/",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg",
+      "phone_number": "+1-650-253-0000",
+      "address": "1600 Amphitheatre Parkway, Mountain View, CA 94043, USA"
+    },
+    {
+      "name": "Microsoft Corporation",
+      "founded": 1975,
+      "hq_location": "Redmond, Washington, USA",
+      "industry": "Technology",
+      "ceo": "Satya Nadella",
+      "revenue": "$143 billion (2020)",
+      "website": "https://www.microsoft.com/",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg",
+      "phone_number": "+1-800-642-7676",
+      "address": "One Microsoft Way, Redmond, WA 98052-6399, USA"
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "founded": 1994,
+      "hq_location": "Seattle, Washington, USA",
+      "industry": "Technology",
+      "ceo": "Andy Jassy",
+      "revenue": "$386.06 billion (2020)",
+      "website": "https://www.amazon.com/",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg",
+      "phone_number": "+1-888-280-4331",
+      "address": "410 Terry Ave N, Seattle, WA 98109, USA"
+    },
+    {
+      "name": "Tesla, Inc.",
+      "founded": 2003,
+      "hq_location": "Palo Alto, California, USA",
+      "industry": "Automotive",
+      "ceo": "Elon Musk",
+      "revenue": "$31.54 billion (2020)",
+      "website": "https://www.tesla.com/",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Tesla_logo.png",
+      "phone_number": "+1-888-518-3752",
+      "address": "3500 Deer Creek Rd, Palo Alto, CA 94304, USA"
+    }
+  ]
+}

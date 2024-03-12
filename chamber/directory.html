@@ -24,9 +24,9 @@
     <header>
         <section id="hero">
             <picture>
-                <source media="(min-width: 960px)" srcset="images/wdd230-org.webp" loading="lazy">
-                <source media="(min-width: 480px)" srcset="images/wdd230-org1.webp" loading="lazy">
-                <img src="images/wdd230-org2.webp" alt="picture" loading="lazy">
+                <source media="(min-width: 960px)" srcset="images/wdd230-org.webp" >
+                <source media="(min-width: 480px)" srcset="images/wdd230-org1.webp">
+                <img src="images/wdd230-org2.webp" alt="picture">
             </picture>
             <div id="mode">
                 <label class="switch">
@@ -42,8 +42,8 @@
                 <ul class="navigationmenu">
                     <li>
                         <a href="index.html">Home</a>
-                        <a href="#">Discover</a>
-                        <a href="directory.html">Directory</a>
+                        <a href="discover.html">Discover</a>
+                        <a href="#">Directory</a>
                         <a href="join.html">Join</a>
                     </li>
                 </ul>
@@ -53,27 +53,12 @@
             </div>
         </section>
     </header>
-    <main class="discover">
-        <section id="infocards">
-            <section id="eventcard">
-                <h2>Attractions</h2>
-                <li>Steep Canyon Trial</li>
-                <li>Diamond Bar City Center</li>
-                <li>Diamond Bar Golf Course</li>
-            </section>
-            <section id="eventcard">
-                <h2>Statistical Data</h2>
-                <p>Population: 53,857 <br> Diversity: <br>59.3% Asian <br>19% Hispanic <br>14% White</p>
-            </section>
-            <section id="eventcard">
-                <h2>Languages</h2>
-                <p>40% English <br>60% Other Languages</p>
-            </section>
-        </section>
-        <img class="canyon" src="images/steep-canyon-trail-11.webp" alt="steep canyon trial" loading="lazy">
-        <img class="city" src="images/Document.jpg" alt="city center" loading="lazy">
-        <img class="mhpark" src="images/348s.jpg" alt="maple hill park" loading="lazy">
-        <img class="dbgolf" src="images/1_Diamond-Bar-Golf-Course-4-of-20-1920x1280.jpg" alt="diamond bar golf" loading="lazy">
+    <main class="maindirect">
+        <div class="menu">
+            <button id="grid">⏹️Grid</button>
+            <button id="list">📄List</button>
+        </div>
+        <article><div id="company-list"></div></article>
     </main>
     <footer>
         <p>&copy;<span id="copyrightYear"></span> <br>Jared Keh<br>Diamond Bar Chamber of Commerce</p>
@@ -83,20 +68,63 @@
     <script src="scripts/chambergetmenu.js"></script>
     <script src="scripts/size.js"></script>
     <script src="scripts/darkmode.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/grid&list.js"></script>
     <script>
-        // Assuming you have JavaScript code to fetch and update temperature and wind speed values
-        // For demonstration purposes, let's assume temperature and wind speed are fetched and updated elsewhere in your code
-        var currentTemperature = 45; // Example temperature value in Fahrenheit
-        var currentWindSpeed = 10; // Example wind speed value in mph
+        // Function to fetch JSON data from the file
+function fetchCompanyData() {
+    fetch('data/members.json') // Replace 'companies.json' with the path to your JSON file
+    .then(response => response.json())
+    .then(data => {
+        displayCompanyData(data.companies); // Assuming JSON has a 'companies' array
+    })
+    .catch(error => {
+        console.error('Error fetching data:', error);
+      });
+  }
+  
+  // Function to display company data on the HTML page
+  function displayCompanyData(companies) {
+    const companyList = document.getElementById('company-list');
+  
+    companies.forEach(company => {
+      const companyDiv = document.createElement('div');
+      companyDiv.innerHTML = `
+        <h2>${company.name}</h2>
+        <p><strong>Website:</strong> <a href="${company.website}" target="_blank">${company.website}</a></p>
+        <p><strong>Phone Number:</strong> ${company.phone_number}</p>
+        <p><strong>Address:</strong> ${company.address}</p>
+        <img src="${company.logo}" alt="${company.name} Logo" width="100">
+      `;
+      companyList.appendChild(companyDiv);
+    });
+  }
+  
+  // Call the fetchCompanyData function when the page loads
+  window.onload = function() {
+    fetchCompanyData();
+  };
+  
+    </script>
+    <script>
+        const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector("article");
 
-        // Update temperature and wind speed elements on the page
-        document.getElementById("tempValue").textContent = currentTemperature;
-        document.getElementById("windValue").textContent = currentWindSpeed;
+// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
 
-        // Calculate wind chill and update the element on the page
-        var windChill = calculateWindChill(currentTemperature, currentWindSpeed);
-        document.getElementById("windchillValue").textContent = windChill;
+gridbutton.addEventListener("click", () => {
+	// example using arrow function
+	display.classList.add("grid");
+	display.classList.remove("list");
+});
+
+listbutton.addEventListener("click", showList); // example using defined function
+
+function showList() {
+	display.classList.add("list");
+	display.classList.remove("grid");
+}
+
     </script>
 </body>
 </html>
