@@ -228,7 +228,7 @@ nav li
     border-radius: 10%;
     font-size: 15px;
 }
-button{
+.joinbutton{
     position: absolute;
     top: 450px;
     left: 550px;
@@ -540,7 +540,7 @@ main img {
     grid-template-rows: 25% 25% 25% 25%;
 }
 
-#company-list
+#members
 {
     display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -612,15 +612,101 @@ main img {
 	text-align: center;
 }
 
-.grid img {
-	border: 1px solid #fff;
-	box-shadow: 0 0 10px #333;
-}
-
 .grid section > * {
 	margin: 0.1rem;
 }
 
 .grid h3 {
 	font-family: "Caveat", cursive;
+}
+
+.menu {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #396E94;
+	text-align: center;
+}
+
+.menu button {
+	padding: 1rem;
+	font-weight: 700;
+}
+
+#grid {
+    top: 1300px;
+    left: 100px
+}
+#list{
+    top: 1300px;
+    left: 200px;
+}
+
+.list .member
+{
+    margin: 1rem;
+}
+.member
+{
+    /* border: 1px solid black; */
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    margin: 1rem;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+    grid-column: 1 / 4;
+}
+
+.list section {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	margin: 0;
+	padding: 0.25rem;
+}
+.list section > * {
+	margin: 0 1rem;
+}
+.list .membership-level
+{
+    display: none;
+}
+.list .other
+{
+    display: none;
+}
+
+#members h2
+{
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.menu {
+	margin: 1rem auto;
+	/* border: 1px solid rgba(0, 0, 0, 0.1); */
+	padding: 0.5rem;
+	/* background-color: #bed; */
+	text-align: center;
+    grid-column: 2 / 3;
+}
+.menu button
+{
+    margin: 1rem;
+}
+
+article.grid {
+    grid-column: 1 / 4;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    margin-left: 10px;
+    overflow-y: auto;
+    /* gap: 20px; */
+}
+article.list
+{
+    overflow-y: auto;
 }

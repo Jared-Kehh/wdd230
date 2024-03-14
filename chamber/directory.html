@@ -48,7 +48,7 @@
                     </li>
                 </ul>
             </nav>
-            <button>Join Now</button>
+            <button class="joinbutton">Join Now</button>
                 </div>
             </div>
         </section>
@@ -58,7 +58,7 @@
             <button id="grid">⏹️Grid</button>
             <button id="list">📄List</button>
         </div>
-        <article><div id="company-list"></div></article>
+        <article class="grid" id="members"></article>
     </main>
     <footer>
         <p>&copy;<span id="copyrightYear"></span> <br>Jared Keh<br>Diamond Bar Chamber of Commerce</p>
@@ -68,63 +68,6 @@
     <script src="scripts/chambergetmenu.js"></script>
     <script src="scripts/size.js"></script>
     <script src="scripts/darkmode.js"></script>
-    <script src="scripts/grid&list.js"></script>
-    <script>
-        // Function to fetch JSON data from the file
-function fetchCompanyData() {
-    fetch('data/members.json') // Replace 'companies.json' with the path to your JSON file
-    .then(response => response.json())
-    .then(data => {
-        displayCompanyData(data.companies); // Assuming JSON has a 'companies' array
-    })
-    .catch(error => {
-        console.error('Error fetching data:', error);
-      });
-  }
-  
-  // Function to display company data on the HTML page
-  function displayCompanyData(companies) {
-    const companyList = document.getElementById('company-list');
-  
-    companies.forEach(company => {
-      const companyDiv = document.createElement('div');
-      companyDiv.innerHTML = `
-        <h2>${company.name}</h2>
-        <p><strong>Website:</strong> <a href="${company.website}" target="_blank">${company.website}</a></p>
-        <p><strong>Phone Number:</strong> ${company.phone_number}</p>
-        <p><strong>Address:</strong> ${company.address}</p>
-        <img src="${company.logo}" alt="${company.name} Logo" width="100">
-      `;
-      companyList.appendChild(companyDiv);
-    });
-  }
-  
-  // Call the fetchCompanyData function when the page loads
-  window.onload = function() {
-    fetchCompanyData();
-  };
-  
-    </script>
-    <script>
-        const gridbutton = document.querySelector("#grid");
-const listbutton = document.querySelector("#list");
-const display = document.querySelector("article");
-
-// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
-
-gridbutton.addEventListener("click", () => {
-	// example using arrow function
-	display.classList.add("grid");
-	display.classList.remove("list");
-});
-
-listbutton.addEventListener("click", showList); // example using defined function
-
-function showList() {
-	display.classList.add("list");
-	display.classList.remove("grid");
-}
-
-    </script>
+    <script src="scripts/directory.js"></script>
 </body>
 </html>

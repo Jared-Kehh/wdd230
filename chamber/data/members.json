@@ -1,64 +1,71 @@
 {
-  "companies": [
+  "members": [
+    {
+      "name": "Google",
+      "address": "1600 Amphitheatre Parkway, Mountain View, CA 94043",
+      "phone": "(650) 253-0000",
+      "website": "https://www.google.com",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg",
+      "membership_level": "Platinum",
+      "other_information": "Google is a multinational technology company specializing in Internet-related services and products.",
+      "latitude": 37.422,
+      "longitude": -122.084
+    },
+    {
+      "name": "Facebook",
+      "address": "1 Hacker Way, Menlo Park, CA 94025",
+      "phone": "(650) 543-4800",
+      "website": "https://www.facebook.com",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg",
+      "membership_level": "Gold",
+      "other_information": "Facebook is an American online social media and social networking service company.",
+      "latitude": 37.484,
+      "longitude": -122.148
+    },
     {
       "name": "Apple Inc.",
-      "founded": 1976,
-      "hq_location": "Cupertino, California, USA",
-      "industry": "Technology",
-      "ceo": "Tim Cook",
-      "revenue": "$274.52 billion (2020)",
-      "website": "https://www.apple.com/",
-      "logo": "https://pngfre.com/wp-content/uploads/apple-logo-6.png",
-      "phone_number": "+1-800-692-7753",
-      "address": "1 Apple Park Way, Cupertino, CA 95014, USA"
+      "address": "1 Apple Park Way, Cupertino, CA 95014",
+      "phone": "(408) 996-1010",
+      "website": "https://www.apple.com",
+      "image": "https://pngfre.com/wp-content/uploads/apple-logo-6.png",
+      "membership_level": "Platinum",
+      "other_information": "Apple Inc. is an American multinational technology company that designs, develops, and sells consumer electronics, computer software, and online services.",
+      "latitude": 37.3327,
+      "longitude": -122.0059
     },
     {
-      "name": "Google LLC",
-      "founded": 1998,
-      "hq_location": "Mountain View, California, USA",
-      "industry": "Technology",
-      "ceo": "Sundar Pichai",
-      "revenue": "$181.69 billion (2020)",
-      "website": "https://www.google.com/",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg",
-      "phone_number": "+1-650-253-0000",
-      "address": "1600 Amphitheatre Parkway, Mountain View, CA 94043, USA"
+      "name": "Walt Disney Studios",
+      "address": "500 S Buena Vista St, Burbank, CA 91521",
+      "phone": "(818) 560-1000",
+      "website": "https://www.waltdisneystudios.com",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Disney_wordmark.svg",
+      "membership_level": "Platinum",
+      "other_information": "Walt Disney Studios is the main headquarters for The Walt Disney Studios, the entertainment conglomerate's film production studio.",
+      "latitude": 34.1563,
+      "longitude": -118.3223
     },
     {
-      "name": "Microsoft Corporation",
-      "founded": 1975,
-      "hq_location": "Redmond, Washington, USA",
-      "industry": "Technology",
-      "ceo": "Satya Nadella",
-      "revenue": "$143 billion (2020)",
-      "website": "https://www.microsoft.com/",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg",
-      "phone_number": "+1-800-642-7676",
-      "address": "One Microsoft Way, Redmond, WA 98052-6399, USA"
+      "name": "Disneyland Resort",
+      "address": "1313 Disneyland Dr, Anaheim, CA 92802",
+      "phone": "(714) 781-4636",
+      "website": "https://disneyland.disney.go.com",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Disney_wordmark.svg",
+      "membership_level": "Gold",
+      "other_information": "Disneyland Resort is a world-famous theme park resort located in Anaheim, California, owned and operated by The Walt Disney Company.",
+      "latitude": 33.8121,
+      "longitude": -117.919
     },
     {
-      "name": "Amazon.com, Inc.",
-      "founded": 1994,
-      "hq_location": "Seattle, Washington, USA",
-      "industry": "Technology",
-      "ceo": "Andy Jassy",
-      "revenue": "$386.06 billion (2020)",
-      "website": "https://www.amazon.com/",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg",
-      "phone_number": "+1-888-280-4331",
-      "address": "410 Terry Ave N, Seattle, WA 98109, USA"
-    },
-    {
-      "name": "Tesla, Inc.",
-      "founded": 2003,
-      "hq_location": "Palo Alto, California, USA",
-      "industry": "Automotive",
-      "ceo": "Elon Musk",
-      "revenue": "$31.54 billion (2020)",
-      "website": "https://www.tesla.com/",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Tesla_logo.png",
-      "phone_number": "+1-888-518-3752",
-      "address": "3500 Deer Creek Rd, Palo Alto, CA 94304, USA"
+      "name": "Disney Interactive",
+      "address": "500 S Buena Vista St, Burbank, CA 91521",
+      "phone": "(818) 553-5000",
+      "website": "https://thewaltdisneycompany.com/disney-interactive/",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Disney_wordmark.svg",
+      "membership_level": "Gold",
+      "other_information": "Disney Interactive is the digital entertainment and interactive media subsidiary of The Walt Disney Company.",
+      "latitude": 34.1563,
+      "longitude": -118.3223
     }
   ]
 }
+
