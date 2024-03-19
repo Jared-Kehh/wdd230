@@ -116,9 +116,6 @@ h1{
     overflow: hidden;
     background-color: white;
 }
-#weathercard p{
-    height: 200px;
-}
 
 #eventscard{
     text-align: center;
@@ -373,8 +370,9 @@ h1{
     overflow: hidden;
     background-color: white;
 }
-#weathercard p{
-    height: 200px;
+
+.weather img{
+    width: 100px;
 }
 
 #eventscard{
@@ -386,9 +384,6 @@ h1{
     margin: 1rem;
     overflow: hidden;
     background-color: white;
-}
-#eventscard p{
-    height: 200px;
 }
 
 #eventcard{
@@ -689,7 +684,6 @@ main img {
 	margin: 1rem auto;
 	/* border: 1px solid rgba(0, 0, 0, 0.1); */
 	padding: 0.5rem;
-	/* background-color: #bed; */
 	text-align: center;
     grid-column: 2 / 3;
 }
@@ -709,4 +703,30 @@ article.grid {
 article.list
 {
     overflow-y: auto;
+}
+
+#bannerButton {
+    background-color: #396E94;
+    color: var(--color-6);
+    border: none;
+    width: 100px;
+    height: 50px;
+    position: relative;
+    top: 110px;
+    left: 10px;
+  }
+
+  #invitation-banner {
+    top: -40px;
+    text-align: center;
+    position: absolute;
+  }
+
+  #bannerButton:hover {
+    color: var(--color-7);
+    background-color: var(--color-6);
+  }
+
+.hide {
+    display: none;
 }

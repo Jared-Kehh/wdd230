@@ -54,11 +54,17 @@
         </section>
     </header>
     <main>
+        <section id="invitation-banner">
+            <button id="bannerButton">Close</button>
+            <h3>Come to the 7:00pm Meet and Greet on Wednesday</h3>
+        </section>
         <div>
             <section id="infocards">
                 <section id="weathercard">
                     <h2>Weather</h2>
-                    <p id="temperature">Temperature: <span id="tempValue">...</span>°F <br> Wind Speed: <span id="windValue">...</span> mph <br> 
+                    <div class="weather" id="temp"></div>
+                    <div class="description" id="descrip"></div>
+                    <p id="temperature">Wind Speed: <span id="windValue">...</span> mph <br> 
                         Wind Chill: <span id="windchillValue">...</span>°F</p>
                 </section>
                 <section id="eventscard">
@@ -72,7 +78,7 @@
                 <br> January 2024 Code Enforcement Activity <br> January Building Inspection Activity <br> January 2024 Plan Check and Permit Revenues</p>
                 </section>
             </section>
-        </div>
+        </div>  
     </main>
     <footer>
         <p>&copy;<span id="copyrightYear"></span> <br>Jared Keh<br>Diamond Bar Chamber of Commerce</p>
@@ -83,6 +89,9 @@
     <script src="scripts/size.js"></script>
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/description.js"></script>
+    <script src="scripts/closebanner.js"></script>
     <script>
         // Assuming you have JavaScript code to fetch and update temperature and wind speed values
         // For demonstration purposes, let's assume temperature and wind speed are fetched and updated elsewhere in your code
