@@ -730,3 +730,18 @@ article.list
 .hide {
     display: none;
 }
+.banner {
+    display: none;
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  #closeBanner {
+    cursor: pointer;
+  }
+  
