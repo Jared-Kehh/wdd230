@@ -53,6 +53,10 @@ nav a{
     right: 0;
     margin: 1rem;
 }
+.information{
+    display: grid;
+    grid-template-columns: auto auto;
+}
 
 .menu-toggle span{
     height: 3px;
@@ -179,6 +183,11 @@ footer{
         font-weight: 500;
         font-size: 1rem;
         font-family:'Montserrat', sans-serif;
+    }
+
+    .information{
+        display: grid;
+        grid-template-columns: auto;
     }
 }
 
