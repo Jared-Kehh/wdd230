@@ -717,3 +717,18 @@ article.list
     cursor: pointer;
   }
   
+  #formmessage{
+    display: grid;
+    grid-template-columns: auto;
+    align-self: center;
+    justify-content: center;
+  }
+  .card{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--form-background-color);
+    font-size: var(--form-font-size);
+    width: 100%;
+}

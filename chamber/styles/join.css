@@ -10,7 +10,7 @@ form
     text-align: center;
     background-color: var(--form-background-color);
     font-size: var(--form-font-size);
-    width: 50%;
+    width: 100%;
     align-self: center;
     justify-content: center;
 }

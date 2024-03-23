@@ -42,7 +42,7 @@
         </section>
     </header>
     <main>
-        <div id="formmessage"></div>
+        <div id="formmessage">
             <form action="thankyou.html" method="get">        
                 <label for="firstname">First Name</label><br>
                 <input type="text" id="user" name="user" required><br>                
@@ -54,6 +54,8 @@
                 <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9_.\-]+@byui.edu" title="A valid byui.edu email address"><br>
                 <label for="number">Phone Number:</label><br>
                 <input type="tel" id="phone" name="phone" required><br>
+                <label for="organization">Organization:<span class="required"></span></label><br>
+                <input type="text" id="organization" name="organization" required><br>
                 <label for="Membership">Membership Level:</label><br>
                 <select id="membership">
                     <option value="NP">NP Membership</option>
@@ -61,10 +63,43 @@
                     <option value="Silver">Silver Membership</option>
                     <option value="Gold">Gold Membership</option>
                 </select><br>
-                <p><label for="review">Review:</label></p>
-                <textarea name="review" id="review" cols="30" rows="5"></textarea><br>
+                <label for="desc">Organization description:</label><br>
+                <input type="text" id="desc" name="desc"><br>
+                <input type="hidden" id="time" name="time">
                 <input type="submit" value="Submit">
             </form>
+            <section class="card">
+                <h2>Membership Benefits</h2>
+                <h4>NP Membership</h4>
+                <p>This membership level is tailored for non-profit organizations dedicated to making a positive 
+                    impact in their communities. As a non-profit member, you'll gain access to our resources and 
+                    support without any associated fees. We believe in supporting your mission and helping you 
+                    achieve your goals without financial barriers.
+                </p>
+                <h4>Bronze Membership</h4>
+                <p>
+                    The Bronze Membership offers essential benefits for individuals or organizations seeking to join 
+                    our community. With this membership, you'll receive access to our basic resources and services 
+                    designed to help you grow and thrive. While it's our entry-level membership, it still provides 
+                    valuable opportunities for networking and support.
+                </p>
+                <h4>Silver Membership</h4>
+                <p>
+                    Upgrade to our Silver Membership for enhanced benefits and opportunities. This tier offers 
+                    additional perks, including access to exclusive events, specialized training sessions, and 
+                    priority support from our team. It's perfect for those who are looking to take their involvement 
+                    to the next level and connect with like-minded individuals and organizations.
+                </p>
+                <h4>Gold Membership</h4>
+                <p>
+                    Our Gold Membership is the ultimate package for individuals or organizations committed to maximizing 
+                    their impact and presence within our community. With this premium membership, you'll receive 
+                    top-tier benefits such as VIP access to all events, personalized consulting services, and prominent 
+                    recognition across our platforms. This level of membership is ideal for those who prioritize excellence 
+                    and seek unparalleled support in achieving their goals.
+                </p>
+            </section>
+        </div>
     </main>
     <footer>
         <p>&copy;<span id="copyrightYear"></span> <br>Jared Keh<br>Diamond Bar Chamber of Commerce</p>
