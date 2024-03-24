@@ -14,3 +14,4 @@ function calculateWindChill(temperature, windSpeed) {
         return "N/A"; // Temperature is outside the range for wind chill calculation
     }
 }
+
