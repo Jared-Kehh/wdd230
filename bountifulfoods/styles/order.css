@@ -1,0 +1,27 @@
+.custom{
+    text-align: center;
+    grid-column: 2/4;
+}
+  
+  label {
+    margin-bottom: 5px;
+    display: block;
+  }
+  .buttons{
+    text-decoration: none;
+  }
+main.services.container.services-grid{
+  display: flex;
+}
+
+@media (max-width: 767px){
+  .custom{
+    grid-column: 1/2;
+  }
+}
+
+@media (max-width: 1024px){
+  .custom{
+    grid-column: 1/3;
+  }
+}

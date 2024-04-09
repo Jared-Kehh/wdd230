@@ -1,0 +1,68 @@
+body{
+    background-color: #EEE;
+}
+
+header{
+    position: static;
+}
+
+#confMain
+{
+    padding: 0 5rem;
+
+}
+
+.thank
+{
+    font-size: 40px;
+}
+
+.info
+{
+    display: flex;
+
+}
+
+.info h2
+{
+    padding: 1rem;
+    border-bottom: 1px solid lightgray;
+}
+
+.nutrition
+{
+    width: 100%;
+    margin-top: 2rem;
+    padding: 2rem;
+    box-shadow: 5px 0 10px lightgray;
+}
+.nutrition h2
+{
+    padding: 1rem;
+    border-bottom: 1px solid lightgray;
+}
+.nutrition p
+{
+    padding: 1rem;
+}
+.order
+{
+    display: flex;
+    flex-direction: column;
+    width: 150%;
+    box-shadow: 0 0 10px lightgray;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+.order p
+{
+    padding: 1rem;
+}
+footer{
+    width: 100%;
+}
+@media (max-width: 767px){
+    header{
+        position: fixed;
+    }
+}

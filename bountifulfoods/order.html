@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="WDD 230 - Bountiful Foods">
+    <meta name="author" content="Jared Keh">
+    <meta name="og:type" content="website">
+    <meta property="og:title" content="Bountiful Foods">
+    <meta property="og:url" content="https://jared-kehh.github.io/wdd230/">
+    <meta property="og:image" content="favicon.ico">
+	<title>Order Page</title>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="styles/base.css">
+	<link rel="stylesheet" href="styles/order.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h2>Bountiful Foods</h2>
+			<nav>
+				<a href="index.html">Home</a>
+				<a href="#">Order</a>
+				<a href="about.html">About</a>
+			</nav>
+			<button class="hamburger">
+				<span class="bar"></span>
+			</button>
+		</div>
+	</header>
+	<nav class="mobile-nav">
+		<a href="index.html">Home</a>
+		<a href="#">Order</a>
+		<a href="about.html">About</a>
+	</nav>
+    <main>
+        <section class="banner">
+            <div class="container">
+                <h1>Smoothies!</h1>
+				<img src="images/Animation-1711395413885.gif" alt="fruitjuice">
+            </div>
+        </section>
+		<section class="services" id="services">
+			<div class="container">
+				<h1>Pick Your Smoothie:</h1>
+				<div class="services-grid">
+					<section class="custom">
+						<form action="confirmation.html" method="get">
+							<label for="firstname">First Name:</label>
+							<input type="text" name="firstname" id="firstname" required><br>
+							<label for="lastname">Last Name:</label>
+							<input type="text" name="lastname" id="lastname" required><br>
+							<label for="email">Email:</label>
+							<input type="email" name="email" id="email" required pattern="[a-zA-Z0-9_.\-]+@gmail.com"><br>
+							<label for="phone">Phone Number:</label><br>
+							<input type="tel" name="phone" id="phone" required><br>
+							<label for="fruitselect1">Fruit 1:</label><br>
+							<select id="fruitselect1" name="fruitselect1">
+								<option id="fruit-list"></option>
+							</select><br>
+							<label for="fruitselect2">Fruit 2:</label><br>
+							<select id="fruitselect2" name="fruitselect2">
+								<option id="fruit-list"></option>
+							</select><br>
+							<label for="fruitselect3">Fruit 3:</label><br>
+							<select id="fruitselect3" name="fruitselect3">
+								<option id="fruit-list"></option>
+							</select><br>
+							<label for="instructions">Special Instructions:</label>
+							<input type="text" name="instructions" id="instructions"><br>
+							<input type="hidden" id="time" name="time">
+							<input type="submit" value="Submit">
+						</form>
+					</section>
+    </main>
+    <footer>
+		<p>&copy;<span id="copyrightYear"></span> Bountiful Foods</p>
+		<p>bountifulfoods@gmail.com (442)111-1111 <br> 521 Forest Ave, Laguna Beach, CA 92651</p>
+		<p id="lastModified"></p>
+		<p><a href="https://www.fruityvice.com/">fruityvice</a> <a href="https://openweathermap.org/">openweathermap</a></p>
+		<div class="social-media">
+            <a href="https://facebook.com">
+                <img src="https://byui-wdd.github.io/wdd130/rafting_images/facebook.png" alt="facebook icon" width="50" height="50">
+            </a>
+            <a href="https://twitter.com">
+                <img src="https://byui-wdd.github.io/wdd130/rafting_images/twitter.png" alt="twitter icon" width="50" height="50">
+            </a>
+            <a href="https://instagram.com">
+                <img src="https://byui-wdd.github.io/wdd130/rafting_images/instagram.png" alt="instagram icon" width="50" height="50">
+            </a>
+        </div>
+    </footer>
+    <script src="script/hammenu.js"></script>
+    <script src="script/fruits.js"></script>
+    <script src="script/getdate.js"></script>
+	<script src="script/days.js"></script>
+</body>
+</html>

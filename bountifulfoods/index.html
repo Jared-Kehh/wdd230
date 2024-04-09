@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="WDD 230 - Bountiful Fruits">
+    <meta name="author" content="Jared Keh">
+    <meta name="og:type" content="website">
+    <meta property="og:title" content="Bountiful Fruits">
+    <meta property="og:url" content="https://jared-kehh.github.io/wdd230/">
+    <meta property="og:image" content="favicon.ico">
+	<title>Bountiful Foods</title>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h2>Bountiful Foods</h2>
+			<nav>
+				<a href="#">Home</a>
+				<a href="order.html">Order</a>
+				<a href="about.html">About</a>
+			</nav>
+			<button class="hamburger">
+				<span class="bar"></span>
+			</button>
+		</div>
+	</header>
+	<nav class="mobile-nav">
+		<a href="#">Home</a>
+		<a href="order.html">Order</a>
+		<a href="about.html">About</a>
+	</nav>
+	<main>
+		<section class="banner">
+			<div class="container">
+				<h1>
+					Blend dreams with fruits,<br class="hide-mob">
+					<span>sip the elixir</span> of vibrant life.
+				</h1>
+
+				<a href="about.html" class="button">Find out more</a>
+			</div>
+		</section>
+
+		<section id="services" class="services">
+			<div class="container">
+				<h2>Smoothies</h2>
+				
+				<div class="services-grid">
+					<div class="service">
+						<figure class="img-box">
+							<img src="images/strawberry-breakfast-smoothie-recipe-2097149-hero-02-5c1d4b2a46e0fb00014bf2ec.jpg" alt="strawberry" class="img">
+						</figure>
+						<div class="content">
+							<h2>Strawberry Burst</h2>
+						</div>
+					</div>
+					<div class="service">
+						<figure class="img-box">
+							<img src="images/dragon-fruit-smoothie-hero-cropped.webp" alt="dragon" class="img">
+						</figure>
+						<div class="content">
+							<h2>Dragon Monster</h2>
+						</div>
+					</div>
+					
+					<div class="service">
+						<figure class="img-box">
+							<img src="images/Fruit-Yogurt-Smoothie-beauty-square2-958b203e4c0f4887b0e0efbc28f57222.jpg" alt="blueberry" class="img">
+						</figure>
+						<div class="content">
+							<h2>Blueberry Passion</h2>
+						</div>
+					</div>
+					<div class="service">
+						<figure class="img-box">
+							<img src="images/images(1).jpg" alt="watermelon" class="img">
+						</figure>
+						<div class="content">
+							<h2>Watermelon Menace</h2>
+						</div>
+					</div>
+				</div>
+				<div class="ordernow">
+					<a href="order.html" class="button">Order Now</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="projects" id="projects">
+			<div class="container">
+				<h2>Summary Of Carlsbad</h2>
+				<div class="projects-grid">
+					<div class="project">
+						<div class="content">
+							<h3>LEGOLAND</h3>
+							<p>Legoland California Resort is a theme park, miniature park, 
+								and aquarium located in Carlsbad, California, based on the Lego toy brand.
+								Excitement in building and constructing your own dreams.
+								It is made for all ages!</p>
+							<a href="https://www.legoland.com" class="button">Learn more</a>
+						</div>
+					</div>
+					<div class="project">
+						<div class="content">
+							<h3>The Flower Fields</h3>
+							<p>The Flower Fields is a flower garden in Carlsbad Ranch in Carlsbad, California.
+								It is open to visitors between March 1 and Mother's Day. 
+								It has vibrant colorful flowers that will make you fall in love.</p>
+							<a href="https://www.theflowerfields.com" class="button">Learn more</a>
+						</div>
+					</div>
+					<div class="project">
+						<div class="content">
+							<h3>Sea Life Aquarium</h3>
+							<p>Family-friendly exhibits featuring more than 5,000 sea creatures, 
+								plus a play area & group packages.
+								Packed wonderful information about the sea.
+								It is a great way to explore Carlsbad and brings joy to your vacation!
+							</p>
+							<a href="https://visitcarlsbad.com/directory/sea-life-aquarium" class="button">Learn more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact" id="contact">
+			<div class="container">
+				<h2>Weather</h2>
+				<div class="weather" id="temp"></div>
+				<p id="day1"></p>
+				<div class="description" id="descrip"></div>
+				<p id="day2"></p>
+				<p id="day3"></p>
+				<p id="day4"></p>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<p>&copy;<span id="copyrightYear"></span> Bountiful Foods</p>
+		<p>bountifulfoods@gmail.com (442)111-1111 <br> 521 Forest Ave, Laguna Beach, CA 92651</p>
+		<p id="lastModified"></p>
+		<p><a href="https://www.fruityvice.com/">fruityvice</a> <a href="https://openweathermap.org/">openweathermap</a></p>
+		<div class="social-media">
+            <a href="https://facebook.com">
+                <img src="https://byui-wdd.github.io/wdd130/rafting_images/facebook.png" alt="facebook icon" width="50" height="50">
+            </a>
+            <a href="https://twitter.com">
+                <img src="https://byui-wdd.github.io/wdd130/rafting_images/twitter.png" alt="twitter icon" width="50" height="50">
+            </a>
+            <a href="https://instagram.com">
+                <img src="https://byui-wdd.github.io/wdd130/rafting_images/instagram.png" alt="instagram icon" width="50" height="50">
+            </a>
+		</div>
+	</footer>
+	<script src="script/hammenu.js"></script>
+  <script src="script/weather.js"></script>
+  <script src="script/days.js"></script>
+  <script src="script/getdate.js"></script>
+</body>
+</html>
